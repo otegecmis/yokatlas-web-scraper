@@ -1,10 +1,12 @@
 from app.scraper import Scraper
+from app.cleaner import Cleaner
 from tqdm import tqdm
 import os, json
 
 class App: 
     def __init__(self) -> None:
         self.scraper = Scraper()
+        self.cleaner = Cleaner()
 
     def universities(self):
         if not os.path.exists("./data"):
@@ -60,6 +62,7 @@ class App:
                 json.dump(degrees, f, indent=4, ensure_ascii=False)
 
         print("👍 Success: Scraping has been completed successfully.")
+        print("⚪️ Info: You can find the scraped data in the './data' folder.")
         print("⚪️ Info: If you want a fresh start, please run the '--tools reset' command.")
     
     def reset(self):
@@ -68,4 +71,5 @@ class App:
             print("🟢 Success: The 'data' folder has been deleted.")
     
     def clean(self):
-        print("🛠️ Debug: clean()")
+        self.cleaner.degrees()
+        print("🟢 Success: The 'degrees.json' file has been cleaned.")
