@@ -1,0 +1,7 @@
+# files
+.DS_Store
+*.json
+
+# folders
+env
+__pycache__
