@@ -59,3 +59,7 @@ python main.py -h
 | To Reset the Database                  | `python main.py --tools reset`      |
 | To Manipulate Data for Clean Operation | `python main.py --tools clean`      |
 | For More Information                   | `python main.py --h`                |
+
+### 3. Warning
+
+This project is for `educational purposes only`, and `I take no responsibility` for any issues that may arise from its use.
