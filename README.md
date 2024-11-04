@@ -64,4 +64,4 @@ python main.py -h
 
 ### 3. Warning
 
-This project is for `educational purposes only`, and `I take no responsibility` for any issues that may arise from its use.
+This project is for `educational purposes only` and `I take no responsibility` for any issues that may arise from its use.
