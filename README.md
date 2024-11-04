@@ -56,10 +56,10 @@ python main.py -h
 
 | Action                                 | Command                             |
 | -------------------------------------- | ----------------------------------- |
-| To Get Universities                    | `python main.py --get universities` |
-| To Get Degrees                         | `python main.py --get degrees`      |
-| To Reset the Database                  | `python main.py --tools reset`      |
-| To Manipulate Data for Clean Operation | `python main.py --tools clean`      |
+| Get Universities                       | `python main.py --get universities` |
+| Get Degrees                            | `python main.py --get degrees`      |
+| Reset the Database                     | `python main.py --tools reset`      |
+| Manipulate Data for Clean Operation    | `python main.py --tools clean`      |
 | Help                                   | `python main.py --h`                |
 
 ### 3. Warning
