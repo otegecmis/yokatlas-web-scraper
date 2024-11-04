@@ -1,6 +1,8 @@
 ## YokAtlas Web Scraper
 
-This project is a `web scraper` designed to extract details about bachelor's degree programs from universities in Turkey. It is built using `Python`, leveraging `BeautifulSoup` and `Selenium` to efficiently parse and collect the necessary information.
+A web scraper for extracting details about bachelor's degree programs from Turkish universities.
+
+- Built with **Python**, utilizing **BeautifulSoup** and **Selenium** for data extraction and parsing.
 
 ### 0. Preview
 
@@ -54,11 +56,11 @@ python main.py -h
 
 | Action                                 | Command                             |
 | -------------------------------------- | ----------------------------------- |
-| To Get Universities                    | `python main.py --get universities` |
-| To Get Degrees                         | `python main.py --get degrees`      |
-| To Reset the Database                  | `python main.py --tools reset`      |
-| To Manipulate Data for Clean Operation | `python main.py --tools clean`      |
-| For More Information                   | `python main.py --h`                |
+| Get Universities                       | `python main.py --get universities` |
+| Get Degrees                            | `python main.py --get degrees`      |
+| Reset the Database                     | `python main.py --tools reset`      |
+| Manipulate Data for Clean Operation    | `python main.py --tools clean`      |
+| Help                                   | `python main.py --h`                |
 
 ### 3. Warning
 
