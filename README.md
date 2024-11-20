@@ -4,7 +4,7 @@ A web scraper for extracting details about bachelor's degree programs from Turki
 
 - Built with **Python**, utilizing **BeautifulSoup** and **Selenium** for data extraction and parsing.
 
-### 0. Preview
+### 1. Preview
 
 <div style="float: left;">
     <img src="assets/1.png" style="width: 70%;" />
@@ -12,7 +12,11 @@ A web scraper for extracting details about bachelor's degree programs from Turki
     <img src="assets/3.png" style="width: 70%;" />
 </div>
 
-### 1. Installation
+### 2. Warning
+
+This project is for `educational use only` and carries no liability.
+
+### 3. Installation
 
 Ensure you have `Python 3.x`, `pip`, `virtualenv` and `chromedriver` installed on your system.
 
@@ -52,6 +56,8 @@ pip install -r requirements.txt
 python main.py -h
 ```
 
+That's it! 🥳
+
 ### 2. Usage
 
 | Action                                 | Command                             |
@@ -62,6 +68,4 @@ python main.py -h
 | Manipulate Data for Clean Operation    | `python main.py --tools clean`      |
 | Help                                   | `python main.py --h`                |
 
-### 3. Warning
 
-This project is for `educational purposes only` and `I take no responsibility` for any issues that may arise from its use.
