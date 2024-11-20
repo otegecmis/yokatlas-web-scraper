@@ -52,11 +52,7 @@ pip install -r requirements.txt
 
 6. **Run the scraper**
 
-```sh
-python main.py
-```
-
-That's it! 🥳
+Use the commands from the `Usage` section below. 🥳
 
 ### 4. Usage
 
