@@ -53,7 +53,7 @@ pip install -r requirements.txt
 6. **Run the scraper**
 
 ```sh
-python main.py -h
+python main.py
 ```
 
 That's it! 🥳
