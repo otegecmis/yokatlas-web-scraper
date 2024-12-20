@@ -30,10 +30,10 @@ git clone https://github.com/otegecmis/yokatlas-web-scraper.git
 cd yokatlas-web-scraper
 ```
 
-3. **Create a virtual environment.**
+3. **Run the installation script.**
 
 ```sh
-virtualenv env
+./scripts/install.sh
 ```
 
 4. **Activate the virtual environment.**
@@ -42,13 +42,7 @@ virtualenv env
 . env/bin/activate
 ```
 
-5. **Install the required dependencies.**
-
-```sh
-pip install -r requirements.txt
-```
-
-6. **Run the scraper.**
+5. **Run the scraper.**
 
 Use the commands from the `Usage` section below. 🥳
 
