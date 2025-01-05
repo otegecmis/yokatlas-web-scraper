@@ -9,13 +9,17 @@ class Core:
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         driver = webdriver.Chrome(options=chrome_options)
-        driver.get(url)
+        
+        try:
+            driver.get(url)
 
-        WebDriverWait(driver, 10).until(
-            lambda driver: driver.execute_script("return document.readyState") == "complete"
-        )
+            WebDriverWait(driver, 10).until(
+                lambda driver: driver.execute_script("return document.readyState") == "complete"
+            )
 
-        return BeautifulSoup(driver.page_source, "html.parser")
+            return BeautifulSoup(driver.page_source, "html.parser")
+        finally:
+            driver.quit()
 
 class Utility:
     def transform(self, key):
@@ -37,9 +41,9 @@ class Utility:
 
 class Scraper(Core, Utility):
     def __init__(self) -> None:
-        pass
+        super().__init__()
     
-    def get_universities(self):
+    def get_universities(self) -> list:
         soup = self.soup("https://yokatlas.yok.gov.tr/lisans-univ.php")
         universities = []
 
@@ -51,7 +55,7 @@ class Scraper(Core, Utility):
 
         return universities
     
-    def get_degrees_by_university(self, university_id):
+    def get_degrees_by_university(self, university_id: str) -> list:
         soup = self.soup(f"https://yokatlas.yok.gov.tr/lisans-univ.php?u={university_id}")
         degrees = []
 
@@ -68,7 +72,7 @@ class Scraper(Core, Utility):
 
         return degrees
     
-    def get_degree_info(self, degree_id):
+    def get_degree_info(self, degree_id: str) -> dict:
         soup = self.soup(f"https://yokatlas.yok.gov.tr/content/lisans-dynamic/1000_1.php?y={degree_id}")
         degree_info = {}
 
