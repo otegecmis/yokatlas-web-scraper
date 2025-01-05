@@ -42,11 +42,37 @@ cd yokatlas-web-scraper
 . env/bin/activate
 ```
 
-5. **Run the scraper.**
+### 4. Run Instructions 
 
-Use the commands from the `Usage` section below. 🥳
+1. **First, fetch the list of universities.**  
 
-### 4. Usage
+```sh
+python main.py --get universities
+```
+
+If needed, you can manually edit the list of universities by modifying the `universities.json` file located in the `data` folder.
+
+2. **Next, fetch the list of degree programs offered by these universities.**
+
+```sh
+python main.py --get degrees
+```
+
+3. **Perform the clean operation.**
+
+```sh
+python main.py --tools clean
+```
+
+4. **After the clean operation, you can view the list of degrees.**
+
+```sh
+less ./data/degrees.json
+```
+
+Refer to the `Usage` section below for more available commands. 🥳
+
+### 5. Usage (Additional Info)
 
 | Action                                 | Command                             |
 | -------------------------------------- | ----------------------------------- |
@@ -55,5 +81,3 @@ Use the commands from the `Usage` section below. 🥳
 | Reset the Database                     | `python main.py --tools reset`      |
 | Manipulate Data for Clean Operation    | `python main.py --tools clean`      |
 | Help                                   | `python main.py --h`                |
-
-
