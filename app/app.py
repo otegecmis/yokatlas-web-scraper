@@ -71,5 +71,7 @@ class App:
             print("🟢 Success: The 'data' folder has been deleted.")
     
     def clean(self):
-        self.cleaner.degrees()
-        print("🟢 Success: The 'degrees.json' file has been cleaned.")
+        if self.cleaner.degrees():
+            print("🟢 Success: The 'degrees.json' file has been cleaned.")
+        else:
+            print("🔴 Error: Failed to clean the 'degrees.json' file.")
