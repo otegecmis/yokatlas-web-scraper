@@ -1,7 +1,7 @@
 from app.scraper import Scraper
 from app.cleaner import Cleaner
 from tqdm import tqdm
-import os, json
+import os, json, shutil
 
 class App: 
     def __init__(self) -> None:
@@ -67,7 +67,7 @@ class App:
     
     def reset(self):
         if os.path.exists("./data"):
-            os.system("rm -rf ./data")
+            shutil.rmtree("./data")
             print("🟢 Success: The 'data' folder has been deleted.")
     
     def clean(self):
