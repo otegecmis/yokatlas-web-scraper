@@ -5,9 +5,9 @@
 ### 1. Preview
 
 <div style="float: left;">
-    <img src="assets/1.png" style="width: 70%;" />
-    <img src="assets/2.png" style="width: 70%;" />
-    <img src="assets/3.png" style="width: 70%;" />
+    <img src=".github/previews/1.png" style="width: 70%;" />
+    <img src=".github/previews/2.png" style="width: 70%;" />
+    <img src=".github/previews/3.png" style="width: 70%;" />
 </div>
 
 ### 2. Warning
@@ -42,9 +42,9 @@ cd yokatlas-web-scraper
 . env/bin/activate
 ```
 
-### 4. Run Instructions 
+### 4. Run Instructions
 
-1. **First, fetch the list of universities.**  
+1. **First, fetch the list of universities.**
 
 ```sh
 python main.py --get universities
